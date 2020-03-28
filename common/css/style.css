@@ -1,20 +1,43 @@
 
 body { 
-    color: #333333;
+    color: #333;
     font-family: sans-serif;
 }
 
 /* ページ */
 #page {
-   width: 980px;
+   width: 100%;
    
 }
 
-#pageBodyMain {
-    width: 720px;
-  
+#Mainpic {
+    width: 800px;
+    margin: auto;
 }
 
 p {
-    font-size: 16px;
+    line-height: 1.88;
+    
+}
+
+#Mainpic figcaption {
+    font-weight: bold;
+    padding: 20px 0px 15px 0px;
+   
+}
+
+/* 拡大リンクボンタン */
+.ExpansionImage {
+    width: 100px;
+    margin: 0 auto;
+    border: #333 solid 0.5px;
+    display: block;
+   padding: 10px 5px;
+}
+
+.ExpansionImage a {
+    background-image: url("../../toppage/icon/icon_arrow_01.png");
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    
 }
