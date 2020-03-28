@@ -1,0 +1,20 @@
+
+body { 
+    color: #333333;
+    font-family: sans-serif;
+}
+
+/* ページ */
+#page {
+   width: 980px;
+   
+}
+
+#pageBodyMain {
+    width: 720px;
+  
+}
+
+p {
+    font-size: 16px;
+}
