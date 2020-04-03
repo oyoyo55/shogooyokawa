@@ -3,22 +3,35 @@ body {
     color: #333;
     font-family: sans-serif;
 }
-
 /* ページ */
+
 #page {
-   width: 100%;
-   
+    min-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-#Mainpic {
+#pageMain {
     width: 800px;
-    margin: auto;
+    margin: 0 auto;
 }
 
-p {
-    line-height: 1.88;
-    
+#pageMain .TextTitle {
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 30px;
 }
+
+#pageMain .TextTitleImage {
+    width: 22px;
+    height: 22px;
+    vertical-align: text-top;
+    margin-right: 10px;
+}    
+
+#MainText p {
+    line-height: 1.88;
+    }
 
 #Mainpic figcaption {
     font-weight: bold;
@@ -26,18 +39,227 @@ p {
    
 }
 
-/* 拡大リンクボンタン */
-.ExpansionImage {
-    width: 100px;
+/* 戦略の画像 */
+
+.MainImage {
+    margin-top: 30px;
+    width: 100%;
+    object-fit: cover;
     margin: 0 auto;
-    border: #333 solid 0.5px;
-    display: block;
-   padding: 10px 5px;
 }
 
-.ExpansionImage a {
-    background-image: url("../../toppage/icon/icon_arrow_01.png");
-    padding-left: 20px;
-    background-repeat: no-repeat;
+/* ボタン */
+ .btn {
+    text-align: center;
+    line-height: 1.2;
+    margin: 30px 0;
+    padding-bottom: 30px;
+}
+
+.btn p {
+   
+    
+    font-size: 16px;
+    padding: 0 10px;
+    margin: 15px 0;
+
+}
+
+
+.btn a {
+    color: #FFFFFF;
+    border: #005cac solid 1px;
+    background-color: #005cac;
+    text-decoration: none;
+    position: relative;
+
+    display: inline-block;
+    
+    width: 300px;
+}
+
+.btn a:hover {
+    opacity: 0.8;
+}
+
+.btn a:before {
+    content: '›';
+    color: #FFFFFF;
+    position: absolute;
+    left: 12px;
+    top: 25px;
+    font-size: 20px;
+}
+
+
+.btn img {
+    margin-left: 10px;
+}
+
+/* MainTextリンク */
+.MainTextLink {
+    
+    margin: 30px 0;
+    display: flex;
     
 }
+.MainTextLink a {
+    text-decoration: none;
+    color:#0058B3;
+    
+}
+.MainTextLink a:hover {
+    text-decoration: underline;
+
+}
+
+
+
+.MainTextLink .link1 {
+    
+    
+}
+.MainTextLink .link1:before {
+    content: "";
+    background-image: url("../icon/icon-Left.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    padding-left: 15px;
+    
+    
+    
+    
+}
+
+.MainTextLink .link2 {
+   margin-left: auto;
+   margin-top: auto;
+}
+
+.MainTextLink .link2:after {
+    content: "";
+    background-image: url("../icon/icon_Right.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    padding-right: 15px;
+    background-position: 0 -1px;
+}
+
+
+/* TOP画像？ */
+.MainVisual {
+    position: relative;
+    min-width: 1000px;
+    width: 100%;
+    
+}
+
+.MainVisualText {
+    position: absolute;
+    width: 1000px;
+    left: 0;
+    right: 0;
+    margin: 20px auto;
+}
+
+.MainVisualImage {
+    width: 100%;
+    height: 250px;
+    object-fit: none;
+}
+
+.MainVisualText p {
+    font-size: 20px;
+    color: #FFFFFF;
+   
+   
+}
+
+.MainVisualText h1 {
+    font-size: 28px;
+    color: #FFFFFF;
+   
+}
+
+
+    
+   
+
+
+/* NRIの強みリスト2222 */
+
+.contentnav {
+    background-color: #deecf8;
+    width: 100%;
+    position: relative;
+}
+
+.contentnav strong {
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    top: 25px;
+}
+
+
+.contentnav .boxlist {
+    display: inline-block;
+    width: 100%;
+    padding-left: 0;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.boxlist li {
+    list-style-type: none;
+    float: left;
+    padding-left: 20px;
+    
+}
+
+
+
+.boxlist a {
+    text-decoration: none;
+    color:#0058B3;
+    border: #CCCCCC solid 1px;
+    width: 200px;
+    height: 68px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 19px;
+    background-color: #FFFFFF;
+    position: relative;
+    margin: 0;
+}
+
+.boxlist a::before {
+    content: "";
+    background-image: url("../icon/list-icon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 9px;
+    left: 10px;
+    
+    position: absolute;
+}
+
+.boxlist p {
+    text-align: center;
+    line-height: 1.2;
+    
+    margin: 10px 0;
+}
+
+.smallbox a {
+    height: 49px;
+   
+}
+
