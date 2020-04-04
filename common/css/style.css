@@ -2,6 +2,8 @@
 body { 
     color: #333;
     font-family: sans-serif;
+    margin: 0;
+    width: 100%;
 }
 /* ページ */
 
@@ -16,6 +18,10 @@ body {
     margin: 0 auto;
 }
 
+#page .MainVisual .MainVisualImage {
+    width: 100%;
+}
+
 #pageMain .TextTitle {
     font-size: 21px;
     font-weight: bold;
@@ -27,6 +33,7 @@ body {
     height: 22px;
     vertical-align: text-top;
     margin-right: 10px;
+    
 }    
 
 #MainText p {
@@ -263,3 +270,118 @@ body {
    
 }
 
+/* グローバルナビ */
+
+.globalnav {
+    
+}
+
+.globalnav ul {
+    display: flex;
+    justify-content: flex-end;
+    
+    list-style: none;
+    margin: 0;
+    position: relative;
+    height: 60px;
+    
+}
+
+.globalnav li {
+    padding-right: 15px;
+}
+
+.globalnav li a {
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    height: 60px;
+    line-height: 100%;
+    color: #333;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    
+}
+
+.globalnav .nri-icon {
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.globalnav li p {
+    font-weight: bold;
+    
+    margin: 0;
+    line-height: 100%;
+}
+
+.globalnav .icon-menu {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-left: 110px;
+    padding-right: 10px;
+}
+
+.globalnav .icon-menu li {
+    padding-right: 35px;
+    
+    
+    position: relative;
+}
+
+/* ハンバーガーメニュー */
+
+.hamburger {
+    background-color: #000;
+    width: 20px;
+    height: 2px;
+    top: -3px;
+    display: block;
+    position: absolute;
+    content: "";
+    right: 10px;
+}
+
+
+
+.hamburger::before {
+    background-color: #000;
+    width: 20px;
+    height: 2px;
+    
+    display: block;
+    position: absolute;
+}
+
+.hamburger::after {
+    background-color: #000;
+    width: 20px;
+    height: 2px;
+    
+    display: block;
+    position: absolute;
+}
+
+
+
+.hamburger::before,
+.hamburger::after {
+    content: "";
+}
+
+.hamburger::before {
+    top: 8px;
+}
+
+.hamburger::after {
+    top: -8px;
+}
+.hamburger a {
+    margin: 0;
+    display: inline-block;
+}
