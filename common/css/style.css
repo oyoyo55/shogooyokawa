@@ -1,31 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap&subset=japanese');
+
 
 body { 
     color: #333;
-    font-family: sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     margin: 0;
     width: 100%;
 }
+
+/* パンくずなび */
+
+.topicPath p {
+    font-size: 12px;
+    color: #999999;
+    
+    padding-left: 35px;
+    width: 1000px;
+    margin: 0 25% 25px auto;
+}
+
+.topicPath a {
+    text-decoration: none;
+    color: #999999;
+    
+    
+}
+/* ヘッダー固定 */
+
+#pageHead {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    
+}
+
+
+
 /* ページ */
 
 #page {
     min-width: 1000px;
     width: 100%;
     margin: 0 auto;
+    top: 60px;
+    z-index: 0;
+    position: absolute;
 }
 
 #pageMain {
     width: 800px;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 #page .MainVisual .MainVisualImage {
     width: 100%;
+    object-fit: cover;
 }
 
 #pageMain .TextTitle {
     font-size: 21px;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 
 #pageMain .TextTitleImage {
@@ -49,7 +87,7 @@ body {
 /* 戦略の画像 */
 
 .MainImage {
-    margin-top: 30px;
+    margin-top: 25px;
     width: 100%;
     object-fit: cover;
     margin: 0 auto;
@@ -61,6 +99,7 @@ body {
     line-height: 1.2;
     margin: 30px 0;
     padding-bottom: 30px;
+    font-weight: 100;
 }
 
 .btn p {
@@ -69,7 +108,8 @@ body {
     font-size: 16px;
     padding: 0 10px;
     margin: 15px 0;
-
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 
@@ -96,11 +136,14 @@ body {
     left: 12px;
     top: 25px;
     font-size: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 
 .btn img {
-    margin-left: 10px;
+    margin-left: 12px;
+    
 }
 
 /* MainTextリンク */
@@ -122,10 +165,7 @@ body {
 
 
 
-.MainTextLink .link1 {
-    
-    
-}
+
 .MainTextLink .link1:before {
     content: "";
     background-image: url("../icon/icon-Left.jpg");
@@ -134,7 +174,7 @@ body {
     width: 20px;
     height: 20px;
     padding-left: 15px;
-    
+    background-position: 0 5px;
     
     
     
@@ -153,7 +193,7 @@ body {
     width: 20px;
     height: 20px;
     padding-right: 15px;
-    background-position: 0 -1px;
+    background-position: 0 4px;
 }
 
 
@@ -203,6 +243,7 @@ body {
     background-color: #deecf8;
     width: 100%;
     position: relative;
+    margin-bottom: 65px;
 }
 
 .contentnav strong {
@@ -272,20 +313,18 @@ body {
 
 /* グローバルナビ */
 
-.globalnav {
-    
-}
 
 .globalnav ul {
     display: flex;
     justify-content: flex-end;
-    
+    text-align: center;
     list-style: none;
     margin: 0;
     position: relative;
     height: 60px;
     
 }
+
 
 .globalnav li {
     padding-right: 15px;
@@ -310,6 +349,7 @@ body {
     position: absolute;
     top: 15px;
     left: 20px;
+   
 }
 
 .globalnav li p {
@@ -323,16 +363,17 @@ body {
     display: flex;
     align-items: center;
     padding-top: 5px;
-    padding-left: 110px;
+    
     padding-right: 10px;
+    margin-left: 3%;
 }
 
 .globalnav .icon-menu li {
     padding-right: 35px;
-    
-    
     position: relative;
 }
+
+
 
 /* ハンバーガーメニュー */
 
@@ -384,4 +425,39 @@ body {
 .hamburger a {
     margin: 0;
     display: inline-block;
+}
+
+
+.share {
+    font-size: 12px;
+    font-family: arial;
+    font-weight: bold;
+    color: #999999;
+}
+
+.share-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    width: 800px;
+    margin: 25px auto;
+    padding-left: 0;
+}
+
+.share-btn p {
+    position: absolute;
+    right: 150px;
+    top: -7px;
+}
+
+.share-btn li {
+    list-style-type: none;
+    
+}
+
+.share-btn a {
+    display: inline-block;
+    margin: 0 11px;
+    height: 24px;
 }
