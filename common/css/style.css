@@ -48,6 +48,7 @@ body {
     top: 60px;
     z-index: 0;
     position: absolute;
+    margin-bottom: 130px;
 }
 
 #pageMain {
@@ -549,9 +550,11 @@ body {
     text-decoration: none;
     color:#0058B3;
     display: inline-block;
-    
-   
     margin-bottom: 20px;
+}
+
+.nri-info .page-back a:hover {
+    text-decoration: underline;
 }
 
 .nri-info .page-back p {
@@ -637,6 +640,10 @@ body {
     font-weight: lighter;
 }
 
+#footer .footer-nav .nav-link a:hover {
+    text-decoration: underline;
+}
+
 #footer .footer-nav .nav-link li::before {
     content: "";
     background-image: url("../icon/list-icon.svg");
@@ -660,6 +667,57 @@ body {
 /* フッターナビリンク margin調整 */
 #footer .footer-nav {
     border-bottom: solid #CCCCCC 1px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     
+}
+
+/* フッタープライバシーリンクたち */
+#pageFoot {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#pageFoot .privacy ul {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+#pageFoot .privacy li {
+    list-style-type: none;
+    padding: 0 15px;
+    position: relative;
+    
+   
+}
+
+#pageFoot .privacy p {
+    font-size: 12px;
+    color: #999999;
+    margin: 0;
+    line-height: 1;
+}
+
+#pageFoot .privacy a {
+    color: #999999;
+    text-decoration: none;
+    
+}
+
+#pageFoot .privacy a:hover {
+    text-decoration: underline;
+}
+
+#pageFoot .privacy li.icon {
+    border-left: solid #999999 1px;
+}
+
+#pageFoot .privacy li:last-child {
+    border-left: solid #999999 1px;
+}
+
+/* コピーライト */
+#pageFoot .copyright {
+    font-size: xx-small;
+    margin: 0 15px;
 }
