@@ -249,6 +249,7 @@ body {
 .contentnav strong {
     display: inline-block;
     position: absolute;
+    font-weight: 600;
     left: 20px;
     top: 25px;
 }
@@ -549,7 +550,7 @@ body {
     color:#0058B3;
     display: inline-block;
     
-    width: 220px;
+   
     margin-bottom: 20px;
 }
 
@@ -569,3 +570,96 @@ body {
     top: 25px;
 }
 
+/* FollowUSとボタンたち */
+
+.sns-follow-btn {
+    border-top: solid #999999 2px;
+    border-bottom: solid #999999 2px;
+    margin: 50px 0 40px 0;
+    padding: 3px 0;
+    
+}
+
+.sns-follow-btn p.follow-us {
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bold;
+    
+}
+
+.sns-follow-btn ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    
+}
+
+.sns-follow-btn li {
+    list-style-type: none;
+    padding: 0 20px 0 20px;
+    display: block;
+}    
+
+
+/* フッターのリンクたち */
+
+#footer .footer-nav .nav-link {
+    display: flex;
+    padding-bottom: 50px;
+    margin-top: 25px;
+}
+
+#footer .footer-nav .nav-link ul {
+    padding-left: 0px;
+    width: 20%;
+    margin: 0 auto;
+}
+
+#footer .footer-nav .nav-link ul:last-child {
+    margin-right: 5%;
+}
+
+#footer .footer-nav .nav-link ul:first-child {
+    margin-left: 5%;
+}
+
+#footer .footer-nav .nav-link li {
+    list-style-type: none;
+    padding: 10px 5px;
+    position: relative;
+}
+
+#footer .footer-nav .nav-link a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #808080;
+    font-weight: lighter;
+}
+
+#footer .footer-nav .nav-link li::before {
+    content: "";
+    background-image: url("../icon/list-icon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: -10px;
+    top: 18px;
+}
+
+#footer .footer-nav .nav-link strong {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+
+/* フッターナビリンク margin調整 */
+#footer .footer-nav {
+    border-bottom: solid #CCCCCC 1px;
+    margin-bottom: 50px;
+    
+}
