@@ -606,7 +606,7 @@ body {
     display: inline-block;
 }
 
-/* SNSボタン */
+/* SNSボタン(Share) */
 .share {
     font-size: 12px;
     font-family: arial;
@@ -626,8 +626,8 @@ body {
 
 .share-btn p {
     position: absolute;
-    right: 150px;
-    top: -7px;
+    right: 155px;
+    top: -5px;
 }
 
 .share-btn li {
